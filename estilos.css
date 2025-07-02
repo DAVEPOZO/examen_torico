@@ -1,0 +1,126 @@
+/* Estilos Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Estilos de la Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 1rem;
+  word-wrap: break-word; /* Para evitar que el texto largo se desborde */
+}
+
+th {
+  background-color: #007acc;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fafafa;
+  border-top: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+tr:hover {
+  background-color: #e1eaff;
+  cursor: pointer;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  table {
+    font-size: 0.95rem;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  td, th {
+    padding: 8px 12px;
+  }
+
+  /* Hacer la tabla desplazable horizontalmente */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+
+  td, th {
+    padding: 6px 10px;
+  }
+}
